@@ -11,6 +11,9 @@ This Node.js template includes all the necessary tools to quickly start a clean 
 - 💬 Commitizen + Commitlint (commits conventionnels)
 - 🪝 Husky + lint-staged (smart Git hooks)
 - 🧪 Vitest (unit tests)
+- ⚡️ Nodemon (auto restart server during dev)
+- 🌍 Dotenv (environement variables management)
+- 📦 Mongoose (MongoDB)
 
 ## 📦 Installation
 
