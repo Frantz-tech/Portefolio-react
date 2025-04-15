@@ -24,8 +24,9 @@ npm install
 ## Scripts
 
 ```bash
-npm run start   # Lancer le serveur front
-npm run nodemon # lance le server back
+npm run start   # Lance le serveur front
+npm run nodemon # Lance le server back
+npm run dev     # Lance le front et le back avec concurrently
 npm run lint    # Linter les fichiers
 npm run format  # Formater avec Prettier
 npm run commit  # Conventionnal Commits
@@ -59,8 +60,8 @@ portefolio-react/
 │ │ └── userRoutes.js            # Exemple de routes pour l'utilisateur
 │ ├── services/                  # Logique métier (ex. traitement des données)
 │ │ └── userService.js           # Exemple de service utilisateur
-│ ├── config/                     # Configuration de la base de données, variables d'environnement, etc.
-│ │ └── dbConfig.js               # Configuration pour la base de données
+│ ├── config/                    # Configuration de la base de données, variables d'environnement, etc.
+│ │ └── dbConfig.js              # Configuration pour la base de données
 │ ├── middleware/                # Middleware pour la sécurité, gestion des erreurs, etc.
 │ │ └── authMiddleware.js        # Exemple de middleware d'authentification
 │ ├── app.js                     # Le fichier principal d'Express
