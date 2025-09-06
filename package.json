@@ -29,7 +29,8 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
-    "prisma": "^6.6.0"
+    "prisma": "^6.6.0",
+    "swiper": "^11.2.10"
   },
   "extends": [
     "eslint:recommended",
