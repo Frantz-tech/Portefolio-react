@@ -8,7 +8,7 @@ function HeroSection() {
           <div className="circle yel"></div>
         </div>
         <h1>TEN ISRO</h1>
-        <h5>SOFTWARE ENGENEER, FRONT END & BACK END.</h5>
+        <h5>JUNIOR DEVELOPPER, FRONT END & BACK END.</h5>
       </div>
     </div>
   );
