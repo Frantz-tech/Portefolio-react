@@ -58,5 +58,8 @@
 .container-loop-animation {
   display: flex;
   justify-content: center;
+  padding-bottom: 5vh;
+}
+.container-loop-animation dotlottie-player {
   cursor: pointer;
 }

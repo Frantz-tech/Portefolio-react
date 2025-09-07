@@ -30,7 +30,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
     "prisma": "^6.6.0",
-    "swiper": "^11.2.10"
+    "swiper": "^11.2.10",
+    "typed.js": "^2.1.0"
   },
   "extends": [
     "eslint:recommended",

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../styles/caroussel.css';
 
@@ -28,6 +28,11 @@ function Caroussel() {
         </div>
         <Swiper
           slidesPerView={4}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          initialSlide={5}
           spaceBetween={25}
           slidesPerGroup={1}
           centeredSlides={false}
@@ -35,7 +40,7 @@ function Caroussel() {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
           {logos.map((logo, index) => (
@@ -48,7 +53,7 @@ function Caroussel() {
 
       <div className="container-loop-animation">
         <dotlottie-player
-          src="https://lottie.host/1b4a9b91-0103-4744-8a55-dd28c84016de/9Yw19vrVN2.lottie"
+          src="https://lottie.host/f5e93eba-399b-44b4-b3f0-58406fdca316/5Uqzr9Uc6a.lottie"
           background="transparent"
           speed="1.5"
           style={{ width: 50, height: 50 }}

@@ -6,3 +6,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+main {
+  padding: 120px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
