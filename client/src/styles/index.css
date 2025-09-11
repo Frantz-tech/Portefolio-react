@@ -13,3 +13,41 @@ main {
   flex-direction: column;
   gap: 100px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btnGoUp {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opactity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+button {
+  position: fixed;
+  cursor: pointer;
+  right: 3vw;
+  bottom: 3vw;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--links);
+  border: none;
+}
