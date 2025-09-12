@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import Footer from './components/footer';
 import Header from './components/header';
 import HeroSection from './components/heroSection';
 import Main from './components/main';
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Main />
       </main>
+      <Footer />
     </>
   );
 }

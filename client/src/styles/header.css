@@ -4,7 +4,7 @@ header {
 }
 
 :root {
-  --bodyBgColor: #141e28;
+  --bodyBgColor: #1a191d;
   --bgCalq: linear-gradient(180deg, #00000012 60%, #1a191d 100%);
   --links: #f1f1f1;
   --textcolor: rgb(0, 0, 0);
