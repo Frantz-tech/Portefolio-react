@@ -27,18 +27,11 @@ const projectData = [
     alt: 'application météo',
   },
   {
-    id: 5,
+    id: 4,
     title: 'Projet Genshin',
     size: 'medium',
     img: GenshinProject,
     alt: "application sur l'histoire de Genshin",
-  },
-  {
-    id: 4,
-    title: 'Weather App',
-    size: 'small',
-    img: WeatherApp,
-    alt: 'application météo',
   },
 ];
 

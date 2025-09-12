@@ -64,7 +64,7 @@ h2 {
 }
 
 .bvn {
-  color: red;
+  color: var(--purple);
 }
 
 .herop {
