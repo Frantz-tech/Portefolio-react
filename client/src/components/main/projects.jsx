@@ -1,6 +1,6 @@
 import ActemiumProject from '../../assets/actemiumProject.png';
 import GenshinProject from '../../assets/genshinProject.png';
-import TekkenProject from '../../assets/tekkenProject.png';
+import TekkenProject from '../../assets/tekkenProjet.png';
 import WeatherApp from '../../assets/weatherApp.png';
 import '../../styles/projects.css';
 
