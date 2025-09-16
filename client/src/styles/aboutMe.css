@@ -10,7 +10,10 @@
 h2 {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding: 50px;
+}
+.about-me {
+  min-height: 100vh;
 }
 .bitmoji {
   display: flex;
@@ -34,6 +37,15 @@ h2 {
 .container-about-me {
   display: flex;
   gap: 2vw;
+  position: relative;
+}
+.bg-html {
+  position: absolute;
+  width: 40%;
+  top: 95%;
+  left: 30%;
+  z-index: -1;
+  opacity: 0.2;
 }
 
 .map {

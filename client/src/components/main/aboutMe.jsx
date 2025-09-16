@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import codePic from '../../assets/htmlTextEnFond.png';
 import bitmojiImg from '../../assets/IMG_4027-removebg-preview.png';
 import whereIlive from '../../assets/whereIleave.png';
 import '../../styles/aboutMe.css';
-
 export const aboutMeRef = { current: null };
 
 function AboutMe() {
@@ -68,6 +68,9 @@ function AboutMe() {
           </div>
           <div className="about-me-city">
             <img src={whereIlive} alt="where I live" className="map" />
+          </div>
+          <div className="bg-html">
+            <img src={codePic} alt="html en fond" />
           </div>
         </div>
       </section>
