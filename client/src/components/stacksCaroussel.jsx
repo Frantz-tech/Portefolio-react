@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+import { aboutMeRef } from './main/aboutMe';
+
 import { useEffect } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -9,6 +11,9 @@ import '../styles/caroussel.css';
 
 const logoContext = require.context('../assets/svg', false, /\.svg$/);
 const logos = logoContext.keys().map(logoContext);
+const scrollToAboutMe = () => {
+  aboutMeRef.current?.scrollIntoView({ behavior: 'smooth' });
+};
 
 function Caroussel() {
   useEffect(() => {
@@ -20,6 +25,7 @@ function Caroussel() {
       document.body.removeChild(s);
     };
   }, []);
+
   return (
     <>
       <div className="containerCaroussel">
@@ -51,12 +57,12 @@ function Caroussel() {
         </Swiper>
       </div>
 
-      <div className="container-loop-animation">
+      <div className="container-loop-animation" onClick={scrollToAboutMe}>
         <dotlottie-player
           src="https://lottie.host/f5e93eba-399b-44b4-b3f0-58406fdca316/5Uqzr9Uc6a.lottie"
           background="transparent"
-          speed="1.5"
-          style={{ width: 50, height: 50 }}
+          speed="1"
+          style={{ width: 60, height: 60 }}
           loop
           autoplay
         ></dotlottie-player>

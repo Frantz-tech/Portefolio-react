@@ -4,6 +4,8 @@ import bitmojiImg from '../../assets/IMG_4027-removebg-preview.png';
 import whereIlive from '../../assets/whereIleave.png';
 import '../../styles/aboutMe.css';
 
+export const aboutMeRef = { current: null };
+
 function AboutMe() {
   useEffect(() => {
     const map = document.querySelector('.map');
@@ -46,7 +48,7 @@ function AboutMe() {
 
   return (
     <>
-      <section className="about-me">
+      <section className="about-me" ref={el => (aboutMeRef.current = el)}>
         <h2>About me</h2>
         <div className="container-about-me">
           <div className="about-me-parag">
