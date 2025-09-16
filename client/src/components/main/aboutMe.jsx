@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import bitmojiImg from '../../assets/IMG_4027-removebg-preview.png';
-import city from '../../assets/dunkerque.PNG';
+import whereIlive from '../../assets/whereIleave.png';
 import '../../styles/aboutMe.css';
 
 function AboutMe() {
@@ -65,7 +65,7 @@ function AboutMe() {
             </p>
           </div>
           <div className="about-me-city">
-            <img src={city} alt="where I live" className="map" />
+            <img src={whereIlive} alt="where I live" className="map" />
           </div>
         </div>
       </section>
