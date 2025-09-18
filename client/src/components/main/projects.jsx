@@ -4,6 +4,8 @@ import TekkenProject from '../../assets/tekkenProjet.png';
 import WeatherApp from '../../assets/weatherApp.png';
 import '../../styles/projects.css';
 
+export const projectRef = { current: null };
+
 const projectData = [
   {
     id: 1,
@@ -39,7 +41,7 @@ function Projects() {
   return (
     <>
       <section className="projects">
-        <h2>My Projects</h2>
+        <h2 ref={projectRef}>My Projects</h2>
         <div className="container-projects">
           {projectData.map(project => (
             <div key={project.id} className={`project-card  ${project.size}`}>

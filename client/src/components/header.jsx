@@ -2,12 +2,27 @@ import { useEffect, useState } from 'react';
 import logo from '../assets/Tenisro-removebg-preview.png';
 import '../styles/header.css';
 import '../styles/index.css';
+import { contactRef } from './main/contact';
+import { expertiseRef } from './main/expertise';
+import { projectRef } from './main/projects';
+const scrollToExpertiseRef = () => {
+  expertiseRef.current?.scrollIntoView({ behavior: 'smooth' });
+};
+const scrollToContactRef = () => {
+  contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+};
+const scrollToWorkRef = () => {
+  projectRef.current?.scrollIntoView({ behavior: 'smooth' });
+};
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
 function Header() {
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= window.innerHeight * 2) {
+      if (window.scrollY >= window.innerHeight * 1.3) {
         setSticky(true);
       } else {
         setSticky(false);
@@ -29,22 +44,30 @@ function Header() {
         </a>
         <ul className="linka">
           <li>
-            <a href="#home">// home</a>
+            <a href="#home" onClick={scrollToTop}>
+              // home
+            </a>
           </li>
           <li>
-            <a href="#exp">// expertise</a>
+            <a href="#exp" onClick={scrollToExpertiseRef}>
+              // expertise
+            </a>
           </li>
           <li>
-            <a href="#work">// work</a>
+            <a href="#work" onClick={scrollToWorkRef}>
+              // work
+            </a>
           </li>
           <li>
-            <a href="#contact">// contact</a>
+            <a href="#contact" onClick={scrollToContactRef}>
+              // contact
+            </a>
           </li>
         </ul>
       </nav>
 
       {/* Placeholder pour la nav sticky */}
-      {sticky && <div style={{ height: '80px' }}></div>}
+      {/* {sticky && <div style={{ height: '80px' }}></div>} */}
 
       {/* Nav sticky avec blur */}
       <nav className={`navSticky ${sticky ? 'active' : ''}`}>
@@ -53,16 +76,24 @@ function Header() {
         </a>
         <ul className="linka">
           <li>
-            <a href="#home">// home</a>
+            <a href="#home" onClick={scrollToTop}>
+              // home
+            </a>
           </li>
           <li>
-            <a href="#exp">// expertise</a>
+            <a href="#exp" onClick={scrollToExpertiseRef}>
+              // expertise
+            </a>
           </li>
           <li>
-            <a href="#work">// work</a>
+            <a href="#work" onClick={scrollToWorkRef}>
+              // work
+            </a>
           </li>
           <li>
-            <a href="#contact">// contact</a>
+            <a href="#contact" onClick={scrollToContactRef}>
+              // contact
+            </a>
           </li>
         </ul>
       </nav>

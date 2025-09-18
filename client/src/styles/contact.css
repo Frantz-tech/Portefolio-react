@@ -1,0 +1,25 @@
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.formContact {
+  width: 50%;
+  gap: 1vh;
+  border: 2px solid #67daed;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.container-contact-me {
+  display: flex;
+  justify-content: center;
+}
+.sendbtn {
+  cursor: pointer;
+  width: fit-content;
+  border: none;
+  border-radius: 20px;
+  align-self: center;
+}

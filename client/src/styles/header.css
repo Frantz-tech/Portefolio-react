@@ -40,6 +40,7 @@ body {
 }
 
 .navSticky {
+  display: none;
   height: 7vh;
   position: fixed;
   top: 0;
