@@ -10,6 +10,7 @@ form {
   border: 2px solid #67daed;
   border-radius: 5px;
   padding: 40px;
+  padding-bottom: 1vh;
 }
 
 .container-contact-me {
@@ -18,7 +19,7 @@ form {
 }
 .sendbtn {
   cursor: pointer;
-  width: fit-content;
+  width: clamp(120px, 15vw, 200px);
   border: none;
   border-radius: 20px;
   align-self: center;

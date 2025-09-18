@@ -22,6 +22,7 @@
   "type": "module",
   "dependencies": {
     "@babel/preset-react": "^7.26.3",
+    "@emailjs/browser": "^4.4.1",
     "@prisma/client": "^6.6.0",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",

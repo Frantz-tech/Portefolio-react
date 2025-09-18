@@ -8,7 +8,6 @@ function ButtonGoUp() {
     const toogleVisibility = () => {
       if (window.scrollY > window.innerHeight * 1.5) {
         setIsVisible(true);
-        console.log('scroll visibility : ', window.scrollY);
       } else {
         setIsVisible(false);
       }
