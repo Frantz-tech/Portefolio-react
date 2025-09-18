@@ -7,7 +7,7 @@ function Header() {
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= window.innerHeight * 1.4) {
+      if (window.scrollY >= window.innerHeight * 2) {
         setSticky(true);
       } else {
         setSticky(false);
