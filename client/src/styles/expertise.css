@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.container-expertise {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin-top: 80px;
+}
+
+.section-header {
+  display: flex;
+}
+.section-header img {
+  width: 32px;
+  height: 37px;
+}
+
+.section-header h5 {
+  padding-left: 3vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.2em;
+  font-size: 26px;
+  clear: both;
+  text-align: inherit;
+  letter-spacing: -0.1rem;
+}
+.text-section-block {
+  color: #fff;
+  font-family: 'Roboto Mono', Sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+  padding-left: 3vw;
+}
+.text-section-block::before {
+  content: '<h3>';
+  opacity: 0.3;
+  color: white;
+  display: block;
+  margin-left: -35px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.text-section-block::after {
+  content: '<h3>';
+  opacity: 0.3;
+  color: white;
+  display: block;
+  margin-left: -35px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.composant-section-block {
+  width: 33.3%;
+  border-style: solid;
+  border-width: 3px 3px 3px 1.5px;
+  border-collapse: collapse;
+  border-color: #a3a3a3;
+  padding: 40px 30px;
+}
+.section-text {
+  position: relative;
+}
+.section-text::after {
+  opacity: 0.3;
+  content: '';
+  width: 0;
+  height: 65%;
+  position: absolute;
+  background-color: white;
+  border: 0.1px solid white;
+  bottom: 17%;
+  left: 17px;
+}
+
+@media screen and (width < 768px) {
+  .composant-section-block {
+    width: 50%;
+  }
+}
