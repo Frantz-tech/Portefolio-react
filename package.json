@@ -58,6 +58,7 @@
     "eslint-plugin-react": "^7.37.5",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
+    "lodash.merge": "^4.6.2",
     "nodemon": "^3.1.9",
     "prettier": "^3.5.3",
     "supertest": "^7.1.0",
