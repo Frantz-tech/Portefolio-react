@@ -49,7 +49,9 @@ function Expertise() {
               </>
             }
             logo={logoTwitter}
-            parag={'Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework.'}
+            parag={
+              'Very skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework.'
+            }
           />
         </div>
       </section>
