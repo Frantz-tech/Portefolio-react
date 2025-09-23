@@ -86,7 +86,7 @@ body {
   padding: 5px 20px;
   text-decoration: none;
   color: var(--links);
-  font-size: clamp(12px, 1rem, 25px);
+  font-size: 1rem;
 }
 
 .linka a:hover {
@@ -200,7 +200,7 @@ h5 {
   h2,
   h3,
   h4 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   .elementor-widget-container {
@@ -239,13 +239,16 @@ h5 {
   }
 
   .linka {
-    gap: 20px;
+    gap: 5px;
+  }
+  .linka a {
+    font-size: 12px;
   }
 
   h2,
   h3,
   h4 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .elementor-widget-container {
@@ -261,5 +264,13 @@ h5 {
   button {
     width: 45px;
     height: 45px;
+  }
+}
+
+@media (max-width: 460px) {
+  h2,
+  h3,
+  h4 {
+    font-size: 2em;
   }
 }
