@@ -49,3 +49,19 @@
   grid-column: span 3;
   grid-row: span 2;
 }
+
+@media screen and (width < 1024px) {
+  .container-projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-card {
+    max-width: 700px;
+  }
+  .card-title {
+    padding: 1.2vh;
+    font-size: clamp(12px, 2.5vw, 16px);
+    font-weight: 200;
+  }
+}

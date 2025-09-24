@@ -136,3 +136,21 @@ section {
     width: 100%;
   }
 }
+@media screen and (width < 768px) {
+  .bitmoji {
+    width: 12vh;
+  }
+  .bitmoji-img {
+    margin-left: 20px;
+  }
+  .bvn {
+    font-size: small;
+  }
+  .herop {
+    max-width: 200px;
+  }
+  .about-me-parag,
+  p {
+    font-size: 12px;
+  }
+}
