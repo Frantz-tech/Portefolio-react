@@ -13,8 +13,10 @@ h2 {
   padding: 50px;
 }
 section {
-  min-height: 100vh;
   position: relative;
+}
+.about-me {
+  min-height: 100vh;
 }
 .bitmoji {
   display: flex;
@@ -139,6 +141,9 @@ section {
 @media screen and (width < 768px) {
   .bitmoji {
     width: 12vh;
+  }
+  .about-me {
+    min-height: 0;
   }
   .bitmoji-img {
     margin-left: 20px;

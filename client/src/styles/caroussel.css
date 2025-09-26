@@ -63,3 +63,13 @@
 .container-loop-animation dotlottie-player {
   cursor: pointer;
 }
+
+@media screen and (width < 768px) {
+  .caroussel-elementor {
+    max-width: 35px;
+    max-height: 35px;
+  }
+  .swiper {
+    width: 300px;
+  }
+}

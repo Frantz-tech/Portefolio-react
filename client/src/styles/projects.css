@@ -8,19 +8,38 @@
   background-color: transparent;
 }
 .project-card {
-  cursor: pointer;
   border-radius: 5px;
 }
 .imageContainer {
+  cursor: pointer;
   overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  position: relative;
 }
 .imageContainer img {
   transition: transform 0.3s ease;
 }
 .imageContainer:hover img {
   transform: scale(1.02);
+}
+.project-photo-hover::before {
+  content: 'En savoir plus';
+}
+.project-photo-hover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.imageContainer:hover .project-photo-hover {
+  opacity: 1;
 }
 
 .card-title {

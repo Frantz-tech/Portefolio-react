@@ -8,7 +8,7 @@
 .container-expertise {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1000px;
   margin-top: 80px;
 }
 
@@ -57,7 +57,7 @@
 }
 .composant-section-block {
   width: 33.3%;
-  border: 1.5px solid #a3a3a3;
+  border: 3px solid #a3a3a3;
   margin-right: -1.5px;
   margin-bottom: -1.5px;
   padding: 40px 30px;
@@ -103,6 +103,11 @@
   background-color: #ff6b2b;
 }
 
+.title-header-expertise {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 @media screen and (width < 1024px) {
   .composant-section-block {
     width: 50%;
@@ -113,14 +118,14 @@
   .composant-section-block {
     width: 100%;
   }
+  .container-expertise {
+    margin-top: 100px;
+  }
   .section-header h5 {
     font-size: 6.6vw;
   }
   .container-expertise {
     gap: 2vh;
-  }
-  .title-header-expertise {
-    position: relative;
   }
 
   .composant-section-block:nth-child(1) .title-line-one::after,

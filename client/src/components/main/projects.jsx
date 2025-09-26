@@ -47,6 +47,7 @@ function Projects() {
             <div key={project.id} className={`project-card  ${project.size}`}>
               <div className="imageContainer fixHover">
                 <img src={project.img} alt={project.alt} />
+                <div className="project-photo-hover"></div>
               </div>
               <p className="card-title"> {project.title} </p>
             </div>
