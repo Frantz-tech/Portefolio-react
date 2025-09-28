@@ -8,7 +8,10 @@ function Footer() {
         </div>
         <div className="footer-text">
           <p>
-            Have an exciting project you need help with? <br></br> Send me an email or contact me via instant message!
+            Have an exciting project you need <br />
+            help with? <br />
+            Send me an email or contact me via <br />
+            instant message!
           </p>
         </div>
         <span className="espace-container"></span>
@@ -25,17 +28,17 @@ function Footer() {
         <div className="elementor-left-footer">
           <p className="elementor-left-footer-text">
             Merci de votre visite ! Toujours curieux d’apprendre et de collaborer, je suis ouvert à de nouvelles
-            opportunités. 👉 N’hésitez pas à me contacter pour discuter d’un projet ou simplement échanger !
+            opportunités. <br />
+            👉 N’hésitez pas à me contacter pour discuter d’un projet ou simplement échanger !
           </p>
         </div>
         <div className="elementor-right-footer">
           <p className="elementor-right-footer-text">
             Merci de votre visite ! Toujours curieux d’apprendre et de collaborer, je suis ouvert à de nouvelles
-            opportunités. 👉 N’hésitez pas à me contacter pour discuter d’un projet ou simplement échanger !
           </p>
           <p className="elementor-right-bottom-footer-text">
             Merci de votre visite ! Toujours curieux d’apprendre et de collaborer, je suis ouvert à de nouvelles
-            opportunités. 👉 N’hésitez pas à me contacter pour discuter d’un projet ou simplement échanger !
+            opportunités. 👉 N
           </p>
         </div>
       </div>

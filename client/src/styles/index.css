@@ -46,34 +46,41 @@ html {
   border-radius: 50%;
   background-color: var(--links);
   border: none;
+  z-index: 1;
 }
 
 /* Styles CSS pour le footer */
 
 footer {
+  width: 100%;
   background-color: #0e0e0e;
   display: flex;
 }
 
 .footer-heading-title,
-.footer-text {
+.footer-text,
+.footerLinks {
   color: white;
+  margin-left: 4vw;
 }
 
 .footerLinks {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .footerLinks a {
   text-decoration: none;
   color: white;
+  margin-bottom: 0.5vh;
 }
 
 .email-footer-style {
   position: relative;
   width: fit-content;
   z-index: 1;
+  margin-bottom: 1vh;
 }
 .email-footer-style::after {
   content: '';
@@ -83,21 +90,25 @@ footer {
   left: -3px;
   width: 105%;
   height: 8px;
-  background-color: purple;
+  background-color: #9240e7;
 }
 
-.elemento-left-footer,
-p {
-  color: white;
+.elementor-left-footer,
+.elementor-right-footer {
+  width: 50%;
+}
+
+.left-side-container {
+  width: 40%;
 }
 .left-side-container,
 .right-side-container {
-  width: 100%;
   padding: 30px 0 0 50px;
 }
 
 .right-side-container {
   display: flex;
+  width: 60%;
   padding-top: 0 !important;
 }
 .espace-container {
@@ -128,17 +139,51 @@ p {
 }
 
 .elementor-left-footer-text {
-  padding: 20px;
+  position: relative;
   background-color: #bc60fb;
   height: 100%;
 }
+.elementor-left-footer-text,
+.elementor-right-bottom-footer-text,
+.elementor-right-footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+}
+
+.elementor-left-footer-text,
+.elementor-right-bottom-footer-text,
+.elementor-right-footer-text {
+  color: white;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.elementor-left-footer-text::after,
+.elementor-right-bottom-footer-text::after,
+.elementor-right-footer-text::after {
+  content: '';
+  background-image: url('../assets/quote-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+}
 
 .elementor-right-footer-text {
+  position: relative;
   background-color: #0068dd;
-  height: 50%;
+  height: 45%;
 }
 
 .elementor-right-bottom-footer-text {
-  background-color: orange;
-  height: 50%;
+  position: relative;
+  background-color: #923fe6;
+  height: 55%;
 }
