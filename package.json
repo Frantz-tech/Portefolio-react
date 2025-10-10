@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "vercel:prod": "cd client && vercel --prod",
     "test": "vitest",
     "prepare": "husky install",
     "commit": "cz",
