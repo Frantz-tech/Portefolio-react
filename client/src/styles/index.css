@@ -80,7 +80,7 @@ footer {
   position: relative;
   width: fit-content;
   z-index: 1;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh !important;
 }
 .email-footer-style::after {
   content: '';
@@ -149,7 +149,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 30px;
+  padding: 60px 40px;
 }
 
 .elementor-left-footer-text,
@@ -164,7 +164,7 @@ footer {
 .elementor-right-bottom-footer-text::after,
 .elementor-right-footer-text::after {
   content: '';
-  background-image: url('../assets/quote-icon.png');
+  background-image: url('../assets/quote.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -179,11 +179,11 @@ footer {
 .elementor-right-footer-text {
   position: relative;
   background-color: #0068dd;
-  height: 45%;
+  height: 55%;
 }
 
 .elementor-right-bottom-footer-text {
   position: relative;
   background-color: #923fe6;
-  height: 55%;
+  height: 45%;
 }
